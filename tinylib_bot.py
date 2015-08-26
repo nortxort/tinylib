@@ -566,13 +566,12 @@ class TinychatRTMPClient:
 
                 elif cmd.lower() == '!nick':
                     # Give the client a nick name.
-                    if user_check.is_mod or user_check.has_power:
-                        if len(cmd_param) is 0:
-                            self.client_nick = create_random_string(5, 25)
-                            self.set_nick()
-                        else:
-                            self.client_nick = cmd_param.strip()
-                            self.set_nick()
+                    if len(cmd_param) is 0:
+                        self.client_nick = create_random_string(5, 25)
+                        self.set_nick()
+                    else:
+                        self.client_nick = cmd_param.strip()
+                        self.set_nick()
 
                 elif cmd.lower() == '!topic':
                     # Sets a topic.
