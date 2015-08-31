@@ -1,8 +1,7 @@
 """
 This file is based somewhat over a file made by someone named MegaLoler which you can find here:
-http://pastebin.com/0CYCisB5 since this file is rather old, some changes has been made.
+http://pastebin.com/0CYCisB5
 Also, big up to notnola who has made changes to rtmp_protocol.py thereby enabling broadcast to work.
-I have tried to put in as many comments as i could for new developers.
 """
 
 import time
